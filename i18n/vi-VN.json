@@ -1258,7 +1258,9 @@
 				"importError": "Không thể nhập issue",
 				"commentOnEnabled": "Kaneo sẽ bình luận kèm liên kết công việc trên các issue mới",
 				"commentOnDisabled": "Đã tắt bình luận liên kết công việc trên issue mới",
-				"settingsUpdateError": "Không thể cập nhật tích hợp GitHub"
+				"settingsUpdateError": "Không thể cập nhật tích hợp GitHub",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "Bình luận liên kết Kaneo trên issue mới",
 			"commentTaskLinkHint": "Để mọi người trên GitHub có thể chuyển nhanh đến công việc.",
@@ -1281,7 +1283,9 @@
 			"verifyNotInstalled": "Kaneo GitHub App chưa được cài đặt trên kho lưu trữ này.",
 			"verifyReady": "Kaneo GitHub App đã được cài đặt với các quyền cần thiết.",
 			"workflowHint": "Di chuyển công việc khi pull request được mở hoặc gộp trong",
-			"workflowLink": "Quy trình làm việc"
+			"workflowLink": "Quy trình làm việc",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

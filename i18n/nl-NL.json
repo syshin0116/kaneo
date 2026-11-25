@@ -900,7 +900,9 @@
 				"importError": "Importeren issues mislukt",
 				"commentOnEnabled": "Kaneo zal reageren met een taaklink op nieuwe issues",
 				"commentOnDisabled": "Reacties met taaklinks op nieuwe issues staan uit",
-				"settingsUpdateError": "Bijwerken GitHub integratie mislukt"
+				"settingsUpdateError": "Bijwerken GitHub integratie mislukt",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "Reageer met een Kaneo-link op nieuwe issues",
 			"commentTaskLinkHint": "Zodat mensen op GitHub direct naar de taak kunnen gaan.",
@@ -923,7 +925,9 @@
 			"verifyNotInstalled": "De Kaneo GitHub App is niet geïnstalleerd op deze repository.",
 			"verifyReady": "De Kaneo GitHub App is geïnstalleerd met de benodigde permissies.",
 			"workflowHint": "Verplaats taken wanneer pull requests worden geopend of gemerged in",
-			"workflowLink": "Workflow"
+			"workflowLink": "Workflow",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"slackIntegration": {
 			"validation": {

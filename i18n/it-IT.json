@@ -1276,7 +1276,9 @@
 				"importError": "Importazione issue fallita",
 				"commentOnEnabled": "Kaneo commenterà con un link all'attività sulle nuove issue",
 				"commentOnDisabled": "Commenti con link alle attività sulle nuove issue sono disattivati",
-				"settingsUpdateError": "Aggiornamento integrazione GitHub fallito"
+				"settingsUpdateError": "Aggiornamento integrazione GitHub fallito",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "Commenta con un link Kaneo sulle nuove issue",
 			"commentTaskLinkHint": "Così chi è su GitHub può passare direttamente all'attività.",
@@ -1299,7 +1301,9 @@
 			"verifyNotInstalled": "La Kaneo GitHub App non è installata su questo repository.",
 			"verifyReady": "La Kaneo GitHub App è installata con i permessi necessari.",
 			"workflowHint": "Sposta le attività quando le pull request vengono aperte o unite in",
-			"workflowLink": "Flusso di lavoro"
+			"workflowLink": "Flusso di lavoro",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

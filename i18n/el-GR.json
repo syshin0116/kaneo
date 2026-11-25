@@ -1022,7 +1022,9 @@
 				"importError": "Αποτυχία εισαγωγής issues",
 				"commentOnEnabled": "Το Kaneo θα δημοσιεύει σχόλιο με σύνδεσμο εργασίας στα νέα issues",
 				"commentOnDisabled": "Τα σχόλια με σύνδεσμο εργασίας στα νέα issues είναι απενεργοποιημένα",
-				"settingsUpdateError": "Αποτυχία ενημέρωσης ενσωμάτωσης GitHub"
+				"settingsUpdateError": "Αποτυχία ενημέρωσης ενσωμάτωσης GitHub",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "Σχόλιο με σύνδεσμο Kaneo σε νέα issues",
 			"commentTaskLinkHint": "Για να μπορούν όσοι είναι στο GitHub να μεταβαίνουν στην εργασία.",
@@ -1045,7 +1047,9 @@
 			"verifyNotInstalled": "Η εφαρμογή Kaneo GitHub δεν είναι εγκατεστημένη σε αυτό το αποθετήριο.",
 			"verifyReady": "Η εφαρμογή Kaneo GitHub είναι εγκατεστημένη με τα δικαιώματα που χρειάζεται.",
 			"workflowHint": "Μετακινήστε εργασίες όταν ανοίγουν ή συγχωνεύονται pull requests στη",
-			"workflowLink": "Ροή εργασίας"
+			"workflowLink": "Ροή εργασίας",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

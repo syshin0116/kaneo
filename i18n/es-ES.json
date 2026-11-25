@@ -905,7 +905,9 @@
 				"importError": "Error al importar issues",
 				"commentOnEnabled": "Kaneo añadirá un comentario con un enlace a la tarea en los nuevos issues",
 				"commentOnDisabled": "Los comentarios con enlaces a tareas en nuevos issues están desactivados",
-				"settingsUpdateError": "Error al actualizar la integración de GitHub"
+				"settingsUpdateError": "Error al actualizar la integración de GitHub",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "Comentar un enlace de Kaneo en los issues nuevos",
 			"commentTaskLinkHint": "Para que quien esté en GitHub pueda ir directamente a la tarea.",
@@ -928,7 +930,9 @@
 			"verifyNotInstalled": "La Kaneo GitHub App no está instalada en este repositorio.",
 			"verifyReady": "La Kaneo GitHub App está instalada con los permisos que necesita.",
 			"workflowHint": "Mueve tareas cuando se abren o se fusionan pull requests en",
-			"workflowLink": "Flujo de trabajo"
+			"workflowLink": "Flujo de trabajo",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"slackIntegration": {
 			"validation": {

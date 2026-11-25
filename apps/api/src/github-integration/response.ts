@@ -32,6 +32,10 @@ export const githubIntegrationSchema = z
       description:
         "When on, Kaneo comments a link back to the task on the linked GitHub issue.",
     }),
+    issueSync: z.boolean().optional().openapi({
+      description:
+        "When off, tasks and GitHub issues are not synced in either direction. Branches and pull requests still move tasks.",
+    }),
     isActive: z.boolean().nullable(),
     createdAt: responseTimestamp,
     updatedAt: responseTimestamp,

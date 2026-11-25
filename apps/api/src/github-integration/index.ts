@@ -352,6 +352,10 @@ const githubIntegration = apiRouter<BaseVariables & { workspaceId: string }>()
       };
     }
 
+    if (body.issueSync !== undefined) {
+      config = { ...config, issueSync: body.issueSync };
+    }
+
     const validation = await validateGitHubConfig(config);
     if (!validation.valid) {
       throw new HTTPException(400, {

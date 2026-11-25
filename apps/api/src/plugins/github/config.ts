@@ -27,6 +27,7 @@ export const githubConfigSchema = v.object({
   branchPattern: v.optional(v.string()),
   customBranchRegex: v.optional(v.string()),
   commentTaskLinkOnGitHubIssue: v.optional(v.boolean()),
+  issueSync: v.optional(v.boolean()),
   statusTransitions: v.optional(
     v.object({
       onBranchPush: v.optional(v.string()),

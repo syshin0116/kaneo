@@ -15,6 +15,7 @@ export const createGitHubBody = z.object(repositoryRef);
 export const updateGitHubBody = z.object({
   isActive: z.boolean().optional(),
   commentTaskLinkOnGitHubIssue: z.boolean().optional(),
+  issueSync: z.boolean().optional(),
 });
 
 export const repositoryPageQuery = z.object({

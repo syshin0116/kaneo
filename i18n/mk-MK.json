@@ -1022,7 +1022,9 @@
 				"importError": "Неуспешен увоз на issues",
 				"commentOnEnabled": "Kaneo ќе коментира со линк до задачата на новите issues",
 				"commentOnDisabled": "Коментарите со линк до задачата на новите issues се исклучени",
-				"settingsUpdateError": "Неуспешно ажурирање на GitHub интеграцијата"
+				"settingsUpdateError": "Неуспешно ажурирање на GitHub интеграцијата",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "Коментирај Kaneo линк на нови issues",
 			"commentTaskLinkHint": "За луѓето на GitHub да можат брзо да стигнат до задачата.",
@@ -1045,7 +1047,9 @@
 			"verifyNotInstalled": "Kaneo GitHub апликацијата не е инсталирана на овој репозиториум.",
 			"verifyReady": "Kaneo GitHub апликацијата е инсталирана со потребните дозволи.",
 			"workflowHint": "Преместувај задачи кога pull requests се отвораат или спојуваат во",
-			"workflowLink": "Работен тек"
+			"workflowLink": "Работен тек",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

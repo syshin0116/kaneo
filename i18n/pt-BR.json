@@ -1276,7 +1276,9 @@
 				"importError": "Falha ao importar issues",
 				"commentOnEnabled": "O Kaneo comentará com um link da tarefa em novas issues",
 				"commentOnDisabled": "Os comentários com link da tarefa em novas issues estão desativados",
-				"settingsUpdateError": "Falha ao atualizar a integração com o GitHub"
+				"settingsUpdateError": "Falha ao atualizar a integração com o GitHub",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "Comentar um link do Kaneo em novas issues",
 			"commentTaskLinkHint": "Para que as pessoas no GitHub possam ir direto para a tarefa.",
@@ -1299,7 +1301,9 @@
 			"verifyNotInstalled": "O GitHub App do Kaneo não está instalado neste repositório.",
 			"verifyReady": "O GitHub App do Kaneo está instalado com as permissões necessárias.",
 			"workflowHint": "Mova tarefas quando pull requests forem abertos ou mesclados em",
-			"workflowLink": "Fluxo de trabalho"
+			"workflowLink": "Fluxo de trabalho",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

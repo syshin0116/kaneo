@@ -1267,7 +1267,9 @@
 				"importError": "Issues आयात करने में विफल",
 				"commentOnEnabled": "Kaneo नई issues पर कार्य लिंक के साथ टिप्पणी करेगा",
 				"commentOnDisabled": "नई issues पर कार्य लिंक टिप्पणियाँ बंद हैं",
-				"settingsUpdateError": "GitHub एकीकरण अपडेट करने में विफल"
+				"settingsUpdateError": "GitHub एकीकरण अपडेट करने में विफल",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "नए इश्यू पर Kaneo लिंक की टिप्पणी करें",
 			"commentTaskLinkHint": "ताकि GitHub पर लोग सीधे कार्य तक पहुँच सकें।",
@@ -1290,7 +1292,9 @@
 			"verifyNotInstalled": "Kaneo GitHub App इस रिपॉज़िटरी पर इंस्टॉल नहीं है।",
 			"verifyReady": "Kaneo GitHub App ज़रूरी अनुमतियों के साथ इंस्टॉल है।",
 			"workflowHint": "पुल रिक्वेस्ट खुलने या मर्ज होने पर कार्य आगे बढ़ाने के लिए देखें:",
-			"workflowLink": "वर्कफ़्लो"
+			"workflowLink": "वर्कफ़्लो",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

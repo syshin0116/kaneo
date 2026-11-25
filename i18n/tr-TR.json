@@ -1022,7 +1022,9 @@
 				"importError": "Sorunlar içe aktarılamadı",
 				"commentOnEnabled": "Kaneo yeni sorunlara talep bağlantısıyla yorum yapacak",
 				"commentOnDisabled": "Yeni sorunlardaki talep bağlantısı yorumları kapatıldı",
-				"settingsUpdateError": "GitHub entegrasyonu güncellenemedi"
+				"settingsUpdateError": "GitHub entegrasyonu güncellenemedi",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "Yeni sorunlara Kaneo bağlantısıyla yorum yap",
 			"commentTaskLinkHint": "Böylece GitHub kullanıcıları doğrudan talebe gidebilir.",
@@ -1045,7 +1047,9 @@
 			"verifyNotInstalled": "Kaneo GitHub uygulaması bu depoya kurulu değil.",
 			"verifyReady": "Kaneo GitHub uygulaması gereken izinlerle kurulu.",
 			"workflowHint": "Pull request'ler açıldığında veya birleştirildiğinde talepleri taşımak için",
-			"workflowLink": "İş akışı"
+			"workflowLink": "İş akışı",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

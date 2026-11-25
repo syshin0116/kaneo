@@ -73,10 +73,27 @@ export function issueLabelNames(labels: unknown): string[] {
   });
 }
 
+/**
+ * Whether the integration was told to leave issues alone entirely. Branch and
+ * pull-request activity still moves tasks; only issue creation, edits,
+ * comments and imports in either direction stop.
+ */
+export function isIssueSyncDisabled(
+  config: string | Record<string, unknown>,
+): boolean {
+  try {
+    const parsed = typeof config === "string" ? JSON.parse(config) : config;
+    return !!parsed && typeof parsed === "object" && parsed.issueSync === false;
+  } catch {
+    return false;
+  }
+}
+
 export function acceptsIssue(
   config: string | Record<string, unknown>,
   labels: unknown,
 ): boolean {
+  if (isIssueSyncDisabled(config)) return false;
   const rules = readSyncRules(config);
   return !!rules && matchesLabels(rules.incoming, issueLabelNames(labels));
 }

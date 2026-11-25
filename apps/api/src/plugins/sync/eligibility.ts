@@ -10,7 +10,12 @@ import {
 } from "../../database/schema";
 import { updateExternalLink } from "../github/services/link-manager";
 import type { IntegrationDatabase } from "../github/services/integration-task-scope";
-import { isSyncPaused, readSyncRules, type LabelRule } from "./rules";
+import {
+  isIssueSyncDisabled,
+  isSyncPaused,
+  readSyncRules,
+  type LabelRule,
+} from "./rules";
 
 export async function taskMatchesRule(
   taskId: string,
@@ -62,6 +67,7 @@ export async function canSyncTask(
       !sameConfig(integration.config, expectedConfig))
   )
     return false;
+  if (isIssueSyncDisabled(integration.config)) return false;
   const rules = readSyncRules(integration.config);
   const matches =
     !!rules &&
