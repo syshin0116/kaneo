@@ -117,14 +117,14 @@ function TreeRow({
           assigneeImage={task.assigneeImage}
           showSubtasks={false}
         />
-        {progress && (
-          <span
-            className="shrink-0 font-mono text-muted-foreground text-xs tabular-nums"
-            title={t("tasks:treeView.progress", progress)}
-          >
-            {progress.done}/{progress.total}
-          </span>
-        )}
+        {/* Every row keeps this slot, so the label, date and assignee columns
+            line up whether or not a row has children. */}
+        <span
+          className="w-12 shrink-0 text-right font-mono text-muted-foreground text-xs tabular-nums"
+          title={progress ? t("tasks:treeView.progress", progress) : undefined}
+        >
+          {progress ? `${progress.done}/${progress.total}` : null}
+        </span>
       </div>
     </div>
   );
