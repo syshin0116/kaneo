@@ -75,7 +75,13 @@ export function TaskRowBody({
         </TaskPriorityPopover>
       )}
       {showTaskNumbers && (
-        <span className="w-13 shrink-0 truncate font-mono text-muted-foreground text-xs">
+        <span
+          className="shrink-0 truncate font-mono text-muted-foreground text-xs"
+          // Sized in monospace characters for the key, a hyphen and up to four
+          // digits, so a longer key such as ABCD-153 is not cut off while the
+          // titles in a list still start on one line.
+          style={{ width: `${(projectSlug?.length ?? 3) + 5}ch` }}
+        >
           {projectSlug}-{task.number}
         </span>
       )}
