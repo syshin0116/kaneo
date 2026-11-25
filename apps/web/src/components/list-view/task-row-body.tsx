@@ -30,6 +30,8 @@ type TaskRowBodyProps = {
   assigneeName: string | null | undefined;
   assigneeImage: string | null | undefined;
   showPullRequests?: boolean;
+  /** The tree view shows subtree progress itself, so it hides this chip. */
+  showSubtasks?: boolean;
 };
 
 export function TaskRowBody({
@@ -40,6 +42,7 @@ export function TaskRowBody({
   assigneeName,
   assigneeImage,
   showPullRequests = true,
+  showSubtasks = true,
 }: TaskRowBodyProps) {
   const { t } = useTranslation();
   const {
@@ -80,11 +83,13 @@ export function TaskRowBody({
       <div className="flex min-w-0 flex-1 items-center gap-2">
         <span className="truncate text-foreground text-sm">{task.title}</span>
         <div className="flex shrink-0 items-center gap-0.5">
-          <SubtasksChip
-            task={task}
-            workspaceId={workspaceId}
-            className={inlineMetaClass}
-          />
+          {showSubtasks && (
+            <SubtasksChip
+              task={task}
+              workspaceId={workspaceId}
+              className={inlineMetaClass}
+            />
+          )}
           {showTaskItemCounts && (
             <ChecklistChip task={task} className={inlineMetaClass} />
           )}

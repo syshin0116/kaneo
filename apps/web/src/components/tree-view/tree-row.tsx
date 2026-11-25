@@ -115,6 +115,7 @@ function TreeRow({
           isCompleted={status?.isFinal ?? false}
           assigneeName={task.assigneeName}
           assigneeImage={task.assigneeImage}
+          showSubtasks={false}
         />
         {progress && (
           <span
