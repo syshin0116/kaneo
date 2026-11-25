@@ -3255,6 +3255,7 @@
 		"view": {
 			"board": "Board",
 			"list": "List",
+			"tree": "Tree",
 			"backlog": "Backlog",
 			"gantt": "Gantt",
 			"heading": "View"
@@ -3857,6 +3858,17 @@
 			"durationSeconds": "{{seconds, number}}s",
 			"durationMinutes": "{{minutes, number}}m",
 			"durationHoursMinutes": "{{hours, number}}h {{minutes, number}}m"
+		},
+		"treeView": {
+			"pageTitle": "{{name}} / Tree",
+			"title": "Task tree",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"expandAll": "Expand all",
+			"collapseAll": "Collapse all"
 		}
 	},
 	"invitations": {

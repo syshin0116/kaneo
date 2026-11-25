@@ -3270,7 +3270,8 @@
 			"list": "Λίστα",
 			"backlog": "Backlog",
 			"gantt": "Gantt",
-			"heading": "Προβολή"
+			"heading": "Προβολή",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "Επιλέξτε εργασία",
@@ -3857,6 +3858,17 @@
 			"durationSeconds": "{{seconds, number}} δ",
 			"durationMinutes": "{{minutes, number}} λ",
 			"durationHoursMinutes": "{{hours, number}} ώ {{minutes, number}} λ"
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {

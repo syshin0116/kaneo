@@ -3216,7 +3216,8 @@
 			"list": "清單",
 			"backlog": "待辦",
 			"gantt": "甘特圖",
-			"heading": "檢視"
+			"heading": "檢視",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "選取任務",
@@ -3785,6 +3786,17 @@
 			"durationSeconds": "{{seconds, number}}秒",
 			"durationMinutes": "{{minutes, number}}分",
 			"durationHoursMinutes": "{{hours, number}}小時 {{minutes, number}}分"
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {

@@ -3270,7 +3270,8 @@
 			"list": "Liste",
 			"backlog": "Backlog",
 			"gantt": "Gantt",
-			"heading": "Görünüm"
+			"heading": "Görünüm",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "Talep seç",
@@ -3857,6 +3858,17 @@
 			"durationSeconds": "{{seconds, number}} sn",
 			"durationMinutes": "{{minutes, number}} dk",
 			"durationHoursMinutes": "{{hours, number}} sa {{minutes, number}} dk"
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {

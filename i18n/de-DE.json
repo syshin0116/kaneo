@@ -3270,7 +3270,8 @@
 			"list": "Liste",
 			"backlog": "Backlog",
 			"gantt": "Gantt",
-			"heading": "Ansicht"
+			"heading": "Ansicht",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "Aufgabe auswählen",
@@ -3857,6 +3858,17 @@
 			"durationSeconds": "{{seconds, number}} Sek.",
 			"durationMinutes": "{{minutes, number}} Min.",
 			"durationHoursMinutes": "{{hours, number}} Std. {{minutes, number}} Min."
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {
