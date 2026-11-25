@@ -115,15 +115,32 @@ function TreeRow({
           isCompleted={status?.isFinal ?? false}
           assigneeName={task.assigneeName}
           assigneeImage={task.assigneeImage}
-          showSubtasks={false}
         />
         {/* Every row keeps this slot, so the label, date and assignee columns
-            line up whether or not a row has children. */}
+            line up whether or not a row has children. The chip beside the
+            title counts direct subtasks; this bar covers the whole subtree. */}
         <span
-          className="w-12 shrink-0 text-right font-mono text-muted-foreground text-xs tabular-nums"
+          className="flex w-20 shrink-0 items-center justify-end gap-1.5"
           title={progress ? t("tasks:treeView.progress", progress) : undefined}
         >
-          {progress ? `${progress.done}/${progress.total}` : null}
+          {progress ? (
+            <>
+              <span
+                aria-hidden="true"
+                className="h-1 w-8 overflow-hidden rounded-full bg-muted"
+              >
+                <span
+                  className="block h-full rounded-full bg-primary/70"
+                  style={{
+                    width: `${Math.round((progress.done / progress.total) * 100)}%`,
+                  }}
+                />
+              </span>
+              <span className="font-mono text-muted-foreground text-xs tabular-nums">
+                {progress.done}/{progress.total}
+              </span>
+            </>
+          ) : null}
         </span>
       </div>
     </div>
