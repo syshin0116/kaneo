@@ -3270,7 +3270,8 @@
 			"list": "Siyahı",
 			"backlog": "Gözləyən tapşırıqlar",
 			"gantt": "Qant",
-			"heading": "Görünüş"
+			"heading": "Görünüş",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "Tapşırıq seç",
@@ -3857,6 +3858,17 @@
 			"durationSeconds": "{{seconds, number}} san",
 			"durationMinutes": "{{minutes, number}} dəq",
 			"durationHoursMinutes": "{{hours, number}} saat {{minutes, number}} dəq"
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {

@@ -3216,7 +3216,8 @@
 			"list": "Danh sách",
 			"backlog": "Backlog",
 			"gantt": "Gantt",
-			"heading": "Chế độ xem"
+			"heading": "Chế độ xem",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "Chọn công việc",
@@ -3785,6 +3786,17 @@
 			"durationSeconds": "{{seconds, number}} giây",
 			"durationMinutes": "{{minutes, number}} phút",
 			"durationHoursMinutes": "{{hours, number}} giờ {{minutes, number}} phút"
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {

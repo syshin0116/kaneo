@@ -3378,7 +3378,8 @@
 			"list": "Список",
 			"backlog": "Беклог",
 			"gantt": "Ґант",
-			"heading": "Вигляд"
+			"heading": "Вигляд",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "Обрати завдання",
@@ -4001,6 +4002,17 @@
 			"durationSeconds": "{{seconds, number}} с",
 			"durationMinutes": "{{minutes, number}} хв",
 			"durationHoursMinutes": "{{hours, number}} год {{minutes, number}} хв"
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {

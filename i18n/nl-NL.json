@@ -3270,7 +3270,8 @@
 			"list": "Lijst",
 			"backlog": "Backlog",
 			"gantt": "Gantt",
-			"heading": "Weergave"
+			"heading": "Weergave",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "Selecteer taak",
@@ -3857,6 +3858,17 @@
 			"durationSeconds": "{{seconds, number}} s",
 			"durationMinutes": "{{minutes, number}} min",
 			"durationHoursMinutes": "{{hours, number}} u {{minutes, number}} min"
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {

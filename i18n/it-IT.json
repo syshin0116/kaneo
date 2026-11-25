@@ -3324,7 +3324,8 @@
 			"list": "Elenco",
 			"backlog": "Backlog",
 			"gantt": "Gantt",
-			"heading": "Vista"
+			"heading": "Vista",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "Seleziona attività",
@@ -3929,6 +3930,17 @@
 			"durationSeconds": "{{seconds, number}} s",
 			"durationMinutes": "{{minutes, number}} min",
 			"durationHoursMinutes": "{{hours, number}} h {{minutes, number}} min"
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {

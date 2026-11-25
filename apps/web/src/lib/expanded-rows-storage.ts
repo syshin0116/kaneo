@@ -1,16 +1,28 @@
 /**
- * Browser-local, per-project record of which list-view rows are expanded.
+ * Browser-local, per-project record of which rows are expanded in a view.
+ * Each view keeps its own record: the tree view starts from roots rather than
+ * status groups, so its row ids differ from the list view's.
  *
  * This is a convenience rather than state the app depends on: a value that
  * cannot be read or written simply leaves every row collapsed.
  */
-export function expandedRowsStorageKey(projectId: string) {
-  return `kaneo:list-view:expanded-subtasks:${projectId}`;
+export type ExpandedRowsView = "list-view" | "tree-view";
+
+export function expandedRowsStorageKey(
+  projectId: string,
+  view: ExpandedRowsView = "list-view",
+) {
+  return `kaneo:${view}:expanded-subtasks:${projectId}`;
 }
 
-export function readExpandedRows(projectId: string): Record<string, boolean> {
+export function readExpandedRows(
+  projectId: string,
+  view: ExpandedRowsView = "list-view",
+): Record<string, boolean> {
   try {
-    const stored = localStorage.getItem(expandedRowsStorageKey(projectId));
+    const stored = localStorage.getItem(
+      expandedRowsStorageKey(projectId, view),
+    );
     if (!stored) return {};
 
     // A cast would let a stale or hand-edited value through: "null" parses
@@ -37,6 +49,7 @@ export function readExpandedRows(projectId: string): Record<string, boolean> {
 export function writeExpandedRows(
   projectId: string,
   rows: Record<string, boolean>,
+  view: ExpandedRowsView = "list-view",
 ) {
   try {
     // Only expanded rows are kept, and an empty map removes the key, so a
@@ -45,10 +58,10 @@ export function writeExpandedRows(
       Object.entries(rows).filter(([, value]) => value === true),
     );
     if (Object.keys(expanded).length === 0) {
-      localStorage.removeItem(expandedRowsStorageKey(projectId));
+      localStorage.removeItem(expandedRowsStorageKey(projectId, view));
     } else {
       localStorage.setItem(
-        expandedRowsStorageKey(projectId),
+        expandedRowsStorageKey(projectId, view),
         JSON.stringify(expanded),
       );
     }

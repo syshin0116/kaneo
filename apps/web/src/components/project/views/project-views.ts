@@ -2,18 +2,26 @@ import type { LucideIcon } from "lucide-react";
 import {
   CalendarDays,
   ChartGantt,
+  ListTree,
   Rows3,
   SquareKanban,
   SquircleDashed,
 } from "lucide-react";
 import type { TaskLayout } from "@/store/user-preferences";
 
-export type ProjectView = "board" | "list" | "backlog" | "calendar" | "gantt";
+export type ProjectView =
+  | "board"
+  | "list"
+  | "tree"
+  | "backlog"
+  | "calendar"
+  | "gantt";
 
-export type ProjectRoute = "board" | "backlog" | "calendar" | "gantt";
+export type ProjectRoute = "board" | "tree" | "backlog" | "calendar" | "gantt";
 
 export const PROJECT_ROUTE_PATHS = {
   board: "/dashboard/workspace/$workspaceId/project/$projectId/board",
+  tree: "/dashboard/workspace/$workspaceId/project/$projectId/tree",
   backlog: "/dashboard/workspace/$workspaceId/project/$projectId/backlog",
   calendar: "/dashboard/workspace/$workspaceId/project/$projectId/calendar",
   gantt: "/dashboard/workspace/$workspaceId/project/$projectId/gantt",
@@ -33,6 +41,11 @@ export const PROJECT_VIEWS: ReadonlyArray<{
     id: "list",
     labelKey: "tasks:view.list",
     icon: Rows3,
+  },
+  {
+    id: "tree",
+    labelKey: "tasks:view.tree",
+    icon: ListTree,
   },
   {
     id: "backlog",
@@ -70,7 +83,9 @@ export function tasksViewFor(
   taskLayout: TaskLayout,
   viewMode: "board" | "list",
 ): ProjectView {
-  return taskLayout === "calendar" || taskLayout === "gantt"
+  return taskLayout === "tree" ||
+    taskLayout === "calendar" ||
+    taskLayout === "gantt"
     ? taskLayout
     : viewMode;
 }

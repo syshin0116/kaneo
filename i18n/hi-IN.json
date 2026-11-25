@@ -3270,7 +3270,8 @@
 			"list": "सूची",
 			"backlog": "बैकलॉग",
 			"gantt": "गैंट",
-			"heading": "व्यू"
+			"heading": "व्यू",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "कार्य चुनें",
@@ -3857,6 +3858,17 @@
 			"durationSeconds": "{{seconds, number}} से",
 			"durationMinutes": "{{minutes, number}} मि",
 			"durationHoursMinutes": "{{hours, number}} घं {{minutes, number}} मि"
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {

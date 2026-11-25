@@ -3386,7 +3386,8 @@
 			"list": "Список",
 			"backlog": "Бэклог",
 			"gantt": "Гант",
-			"heading": "Вид"
+			"heading": "Вид",
+			"tree": "Tree"
 		},
 		"common": {
 			"selectTask": "Выбрать задачу",
@@ -4053,6 +4054,17 @@
 			"durationSeconds": "{{seconds, number}} с",
 			"durationMinutes": "{{minutes, number}} мин",
 			"durationHoursMinutes": "{{hours, number}} ч {{minutes, number}} мин"
+		},
+		"treeView": {
+			"collapseAll": "Collapse all",
+			"expandAll": "Expand all",
+			"noTasks": "No tasks",
+			"noTasksFound": "No tasks found",
+			"pageTitle": "{{name}} / Tree",
+			"progress": "{{done}} of {{total}} subtasks done",
+			"relationsLoadError": "Subtasks couldn't be loaded, so the tree can't be shown.",
+			"retry": "Retry",
+			"title": "Task tree"
 		}
 	},
 	"invitations": {
