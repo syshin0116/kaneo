@@ -1258,7 +1258,9 @@
 				"importError": "Issue のインポートに失敗しました",
 				"commentOnEnabled": "新しい Issue に Kaneo がタスクリンク付きのコメントを投稿します",
 				"commentOnDisabled": "新しい Issue へのタスクリンクのコメント投稿をオフにしました",
-				"settingsUpdateError": "GitHub 連携の更新に失敗しました"
+				"settingsUpdateError": "GitHub 連携の更新に失敗しました",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "新しい Issue に Kaneo のリンクをコメントする",
 			"commentTaskLinkHint": "GitHub 上のユーザーがタスクにすぐ移動できるようにします。",
@@ -1281,7 +1283,9 @@
 			"verifyNotInstalled": "Kaneo GitHub App がこのリポジトリにインストールされていません。",
 			"verifyReady": "Kaneo GitHub App は必要な権限でインストールされています。",
 			"workflowHint": "プルリクエストのオープンやマージでタスクを移動するには",
-			"workflowLink": "ワークフロー"
+			"workflowLink": "ワークフロー",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

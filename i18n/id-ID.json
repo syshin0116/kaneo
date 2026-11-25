@@ -1014,7 +1014,9 @@
 				"importError": "Gagal mengimpor issue",
 				"commentOnEnabled": "Kaneo akan berkomentar dengan tautan tugas pada issue baru",
 				"commentOnDisabled": "Komentar tautan tugas pada issue baru dimatikan",
-				"settingsUpdateError": "Gagal memperbarui integrasi GitHub"
+				"settingsUpdateError": "Gagal memperbarui integrasi GitHub",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "Komentari issue baru dengan tautan Kaneo",
 			"commentTaskLinkHint": "Agar orang di GitHub dapat langsung membuka tugasnya.",
@@ -1037,7 +1039,9 @@
 			"verifyNotInstalled": "GitHub App Kaneo belum terpasang di repositori ini.",
 			"verifyReady": "GitHub App Kaneo sudah terpasang dengan izin yang diperlukan.",
 			"workflowHint": "Pindahkan tugas saat pull request dibuka atau digabungkan di",
-			"workflowLink": "Alur kerja"
+			"workflowLink": "Alur kerja",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

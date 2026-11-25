@@ -1038,7 +1038,9 @@
 				"importError": "Не удалось импортировать issues",
 				"commentOnEnabled": "Kaneo будет комментировать новые issues ссылкой на задачу",
 				"commentOnDisabled": "Комментарии со ссылками на задачи в новых issues отключены",
-				"settingsUpdateError": "Не удалось обновить интеграцию с GitHub"
+				"settingsUpdateError": "Не удалось обновить интеграцию с GitHub",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "Оставлять ссылку Kaneo в комментарии к новым issues",
 			"commentTaskLinkHint": "Чтобы на GitHub можно было сразу перейти к задаче.",
@@ -1061,7 +1063,9 @@
 			"verifyNotInstalled": "GitHub App Kaneo не установлен в этом репозитории.",
 			"verifyReady": "GitHub App Kaneo установлен со всеми нужными правами.",
 			"workflowHint": "Перемещение задач при открытии или слиянии pull requests настраивается в разделе",
-			"workflowLink": "Рабочий процесс"
+			"workflowLink": "Рабочий процесс",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

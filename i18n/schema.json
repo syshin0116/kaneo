@@ -8251,6 +8251,12 @@
 								},
 								"settingsUpdateError": {
 									"type": "string"
+								},
+								"issueSyncOn": {
+									"type": "string"
+								},
+								"issueSyncOff": {
+									"type": "string"
 								}
 							},
 							"required": [
@@ -8265,7 +8271,9 @@
 								"importError",
 								"commentOnEnabled",
 								"commentOnDisabled",
-								"settingsUpdateError"
+								"settingsUpdateError",
+								"issueSyncOn",
+								"issueSyncOff"
 							]
 						},
 						"commentTaskLinkTitle": {
@@ -8333,6 +8341,12 @@
 						},
 						"workflowLink": {
 							"type": "string"
+						},
+						"issueSyncTitle": {
+							"type": "string"
+						},
+						"issueSyncHint": {
+							"type": "string"
 						}
 					},
 					"required": [
@@ -8358,7 +8372,9 @@
 						"verifyNotInstalled",
 						"verifyReady",
 						"workflowHint",
-						"workflowLink"
+						"workflowLink",
+						"issueSyncTitle",
+						"issueSyncHint"
 					]
 				},
 				"giteaIntegration": {

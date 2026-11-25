@@ -1258,7 +1258,9 @@
 				"importError": "导入 Issues 失败",
 				"commentOnEnabled": "Kaneo 将在新 Issue 上评论任务链接",
 				"commentOnDisabled": "新 Issue 的任务链接评论已关闭",
-				"settingsUpdateError": "更新 GitHub 集成失败"
+				"settingsUpdateError": "更新 GitHub 集成失败",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "在新 Issue 上评论 Kaneo 链接",
 			"commentTaskLinkHint": "方便 GitHub 上的人跳转到对应任务。",
@@ -1281,7 +1283,9 @@
 			"verifyNotInstalled": "Kaneo GitHub App 尚未安装到此仓库。",
 			"verifyReady": "Kaneo GitHub App 已安装，并具备所需权限。",
 			"workflowHint": "要在 PR 打开或合并时移动任务，请前往",
-			"workflowLink": "工作流"
+			"workflowLink": "工作流",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

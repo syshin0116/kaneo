@@ -1476,7 +1476,9 @@
 				"settingsUpdateError": "Nie udało się zaktualizować integracji z GitHubem",
 				"updated": "Integrację z GitHubem zaktualizowano pomyślnie",
 				"updateError": "Nie udało się zaktualizować integracji z GitHubem",
-				"verifyError": "Nie udało się zweryfikować instalacji aplikacji GitHub"
+				"verifyError": "Nie udało się zweryfikować instalacji aplikacji GitHub",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"updatePermissions": "Zaktualizuj uprawnienia",
 			"accountVerificationHint": "Connect your GitHub account to verify that you administer this repository.",
@@ -1494,7 +1496,9 @@
 			"verifyNotInstalled": "Aplikacja GitHub Kaneo nie jest zainstalowana w tym repozytorium.",
 			"verifyReady": "Aplikacja GitHub Kaneo jest zainstalowana z wymaganymi uprawnieniami.",
 			"workflowHint": "Przenoś zadania po otwarciu lub scaleniu pull requestów w sekcji",
-			"workflowLink": "Obieg pracy"
+			"workflowLink": "Obieg pracy",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"information": "Profil",
 		"informationPage": {

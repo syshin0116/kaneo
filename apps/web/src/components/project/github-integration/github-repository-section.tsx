@@ -1,4 +1,4 @@
-import { MessageSquareIcon } from "lucide-react";
+import { MessageSquareIcon, RefreshCwIcon } from "lucide-react";
 import { useTranslation } from "react-i18next";
 import { CommentLinkRow } from "@/components/project/code-hosting/comment-link-row";
 import { RepositoryLink } from "@/components/project/code-hosting/repository-link";
@@ -55,6 +55,25 @@ export function GithubRepositorySection({
     }
   };
 
+  const issueSync = integration.issueSync !== false;
+  const toggleIssueSync = async (checked: boolean) => {
+    try {
+      await update({ projectId, json: { issueSync: checked } });
+      toast.success(
+        checked
+          ? t("settings:githubIntegration.toast.issueSyncOn")
+          : t("settings:githubIntegration.toast.issueSyncOff"),
+        { icon: RefreshCwIcon },
+      );
+    } catch (error) {
+      toast.error(
+        error instanceof Error
+          ? error.message
+          : t("settings:githubIntegration.toast.settingsUpdateError"),
+      );
+    }
+  };
+
   return (
     <IntegrationPanelSection
       label={t("settings:codeHosting.repositorySection")}
@@ -85,6 +104,15 @@ export function GithubRepositorySection({
         </IntegrationCheckLine>
       )}
       {isConnected ? (
+        <CommentLinkRow
+          title={t("settings:githubIntegration.issueSyncTitle")}
+          description={t("settings:githubIntegration.issueSyncHint")}
+          checked={issueSync}
+          disabled={isPending}
+          onCheckedChange={toggleIssueSync}
+        />
+      ) : null}
+      {isConnected && issueSync ? (
         <CommentLinkRow
           title={t("settings:githubIntegration.commentTaskLinkTitle")}
           description={t("settings:githubIntegration.commentTaskLinkHint")}

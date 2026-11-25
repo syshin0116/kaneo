@@ -1257,7 +1257,9 @@
 				"importError": "無法匯入 Issue",
 				"commentOnEnabled": "Kaneo 會在新的 Issue 下留言並附上任務連結",
 				"commentOnDisabled": "已關閉在新 Issue 下留言任務連結",
-				"settingsUpdateError": "無法更新 GitHub 整合"
+				"settingsUpdateError": "無法更新 GitHub 整合",
+				"issueSyncOff": "Issue sync is off. Pull requests still move tasks",
+				"issueSyncOn": "Tasks and GitHub issues will sync"
 			},
 			"commentTaskLinkTitle": "在新 Issue 下留言 Kaneo 連結",
 			"commentTaskLinkHint": "方便 GitHub 上的人直接前往任務。",
@@ -1280,7 +1282,9 @@
 			"verifyNotInstalled": "Kaneo GitHub App 尚未安裝在此 Repo。",
 			"verifyReady": "Kaneo GitHub App 已安裝，且具備所需權限。",
 			"workflowHint": "若要在 Pull Request 開啟或合併時移動任務，請前往",
-			"workflowLink": "工作流程"
+			"workflowLink": "工作流程",
+			"issueSyncHint": "When off, no issues are created, updated or imported. Branches and pull requests still move tasks.",
+			"issueSyncTitle": "Sync tasks with GitHub issues"
 		},
 		"giteaIntegration": {
 			"validation": {

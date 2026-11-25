@@ -38,6 +38,7 @@ async function getGithubIntegration(projectId: string) {
     installationId: config.installationId,
     branchPattern: config.branchPattern || defaultGitHubConfig.branchPattern,
     commentTaskLinkOnGitHubIssue: config.commentTaskLinkOnGitHubIssue !== false,
+    issueSync: config.issueSync !== false,
     isActive: integration.isActive && hasVerifiedGitHubBinding(config),
     requiresVerification: !hasVerifiedGitHubBinding(config),
     createdAt: integration.createdAt,
